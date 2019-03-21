@@ -7,7 +7,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1536596743345_131';
 
   // add your config here
-  config.middleware = [];
+  config.middleware = ['errorHandler'];
   config.mysql = {
       // 单数据库信息配置
       client: {
@@ -27,6 +27,17 @@ module.exports = appInfo => {
       // 是否加载到 agent 上，默认关闭
       agent: true,
   };
+
+  config.security={
+        csrf: {
+            enable: false,
+        }
+    };
+
+    /*统一处理错误*/
+    config.errorHandler = {
+        match: '/api'
+    };
   return config;
 };
 

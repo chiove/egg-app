@@ -3,7 +3,10 @@
 /**
  * @param {Egg.Application} app - egg application
  */
+const filter = require('./filter/index');
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/user', controller.home.index);
+  router.post('/api/login', controller.login.index);
+  router.get('/api/checkUser',filter,controller.checkUser.index);
+  router.get('/api/menuList',filter,controller.menuList.index);
 };

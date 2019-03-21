@@ -9,6 +9,7 @@
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.5.0",
     "egg-sequelize": "^4.1.0",
+    "egg-validate": "^2.0.2",
     "mysql2": "^1.6.1"
   },
   "devDependencies": {
@@ -26,7 +27,6 @@
   },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-egg-app",
-    "both": "concurrently \"npm dev\" \"cd client && npm start\"",
     "stop": "egg-scripts stop --title=egg-server-egg-app",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
