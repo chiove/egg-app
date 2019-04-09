@@ -1,3 +1,4 @@
+
 module.exports = (ctx, next) => {
     if(ctx.session.account && ctx.session.user_name){
         return next();

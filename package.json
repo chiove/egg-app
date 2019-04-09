@@ -4,13 +4,15 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "concurrently": "^4.0.1",
     "egg": "^2.2.1",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.5.0",
     "egg-sequelize": "^4.1.0",
     "egg-validate": "^2.0.2",
-    "mysql2": "^1.6.1"
+    "mysql2": "^1.6.1",
+    "sync-request": "^6.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
